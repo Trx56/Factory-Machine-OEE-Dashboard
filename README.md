@@ -30,3 +30,19 @@
  Factory-Machine-OEE-Dashboard
  ┣ oee_dashboard.py    # Metric calculators, array logic, and plot generation
  ┗  README.md           # Project documentation
+
+## How to Run
+
+pip install numpy matplotlib
+python oee_dashboard.py
+
+## Formula
+
+OEE = Availability x Performance x Quality
+- Availability = operating time / planned production time
+- Performance = (ideal cycle time x parts produced) / operating time
+- Quality = good parts / total parts
+
+## Data Note
+
+The production figures for the three stations (Welding Arm, Pick-and-Place, Packaging Bot) are simulated for demonstration. Replace the arrays in `oee_dashboard.py` with real shift data to analyse an actual line.
